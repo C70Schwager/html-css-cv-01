@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* Seitenstruktur - Basic page structure */
+
+         * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+
+            font-size: 14px;
+        }
+
+        .column1 {
+            width:25%; 
+            border-style: solid; 
+            border-color:blue; 
+            background-color: aqua;
+        }
+
+        .column2 {
+            width:75%;
+            border-style: solid; 
+            border-color:rgb(0, 255, 34); 
+            background-color: rgb(221, 251, 227);
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Inhalt - Content */
+        body {
+            font-family: Inter, Arial, Helvetica, sans-serif;
+            font-size: xx-large;
+        }
+
+        .header-title {
+            font-weight: bolder;
+            font-size: large;
+        }
+
+        h1 {
+            font-weight: normal;
+        }
+
+        h2 {
+            font-weight: normal;
+        }
+
+        .h2 {
+            line-height: 0.1;
+            padding-left: 20px;
+            background-color: #b6d7a8;
+            border: 2px solid black;
+        }
+
+        .content {
+            padding-top: 50px;
+            padding-bottom: 80px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            vertical-align: top;
+        }
+
+        .portrait {
+            float: right; 
+            vertical-align:top;
+            width: 80px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Kopf - Header -->
+    <div class="row">
+        <h1 class="header-title">Peter Muster</h1>
+    </div>
+
+    <!-- Inhalt - Content -->
+    <div class="row">
+        <!-- Spalte 1 - Column 1 -->
+        <div class="column column1">
+            <h2>Column 1</h2>
+            <p>Data..</p>
+        </div>
+        <!-- Spalte 2 - Column 2 -->
+        <div class="column column2">
+            <section>
+                <div class="h2">
+                  <h2>Persönliche Daten</h2>
+                </div>
+                <div class="content">
+                  <br>
+                  <!-- Tabelle Personalien -->
+                  <table>
+                    <tr>
+                      <td>Name</td>
+                      <td>Muster</td>
+                      <td rowspan="5">
+                        <img class="portrait" src="images/AmirB.jpg" 
+                             alt="Peter M.">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Vorname</td>
+                      <td>Peter-Paul</td>
+                    </tr>
+                    <tr>
+                      <td>Adresse</td>
+                      <td>Matterstrasse 12 <br>8045 Zürich </td>
+                    </tr>
+                    <tr>
+                      <td>Mobile</td>
+                      <td>012 987 65 43 </td>
+                    </tr>
+                    <tr>
+                      <td>Email</td>
+                      <td>p.p.muster@gmail.com</td>
+                    </tr>
+                  </table>
+
+                </div>
+              </section>
+        </div>
+    </div>
+
+</body>
+</html>
